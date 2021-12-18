@@ -2,11 +2,25 @@
 	"name": "better-scrollIntoView",
 	"version": "0.0.1",
 	"description": "",
-	"main": "index.js",
+	"source": "src/index.js",
+	"main": "dist/main.js",
+	"module": "dist/module.js",
+	"type": "module",
+	"devDependencies": {
+		"parcel": "^2.0.1"
+	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"example": "parcel example/index.html",
+		"build": "rm -rf dist && parcel build"
 	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"browserslist": [
+		"last 3 and_chr versions",
+		"last 3 chrome versions",
+		"last 3 opera versions",
+		"last 3 ios_saf versions",
+		"last 3 safari versions"
+	]
 }
